@@ -1,0 +1,10 @@
+<h1>Let's edit this article</h1>
+
+<%= form_for(@article) do |a| %>
+<%= a.label :title, "Add a title" %>
+<%= a.text_field :title %>
+<%= a.label :content, "add content" %>
+<%= a.text_area :content, cols: 80, rows:10 %>
+
+<%= a.submit "Go" %>
+<% end %>
